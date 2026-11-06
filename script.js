@@ -1,4 +1,4 @@
-let number = 0
+let number = 1
 let numtext = document.querySelector('#dot');
 let pass = "";
 
