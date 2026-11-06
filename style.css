@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'mi';
+  src: url('MiSansLatin-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mik';
+  src: url('MiSansLatin-Normal.ttf') format('truetype');
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('lock.png');
+  background-size: cover;       /* Scales the image to completely cover the background */
+  background-position: center;   /* Centers the image on the screen */
+  background-repeat: no-repeat;  /* Prevents the image from tiling */
+  background-attachment: fixed;  /* Keeps the background fixed during scrolling (optional) */
+  
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 100vh;
+  
+  font-family: mi;
+}
+
+.title{
+  color: white;
+  margin-top: 120px;
+  font-size: 17.5px;
+  padding: 100px;
+  text-align: center;
+}
+
+.dots{
+  display: flex;
+  align-self: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  color: white;
+  margin-bottom: 45px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: mik;
+  gap: 30px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style-type: none;
+  font-size: 25px;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-out;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+li:active{
+  background-color: rgba(200, 200, 200, 0.25);
+}
+
+#unlock{
+  display: none;
+  color: rgba(237, 237, 237, 0.08);
+  position: fixed;   
+  bottom: 0;         
+  left: 0;  
+  font-size: 8px;
+}
+
+#hi{
+  display: flex;
+  flex-direction: column;
+}
